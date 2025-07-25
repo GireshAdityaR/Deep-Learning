@@ -99,9 +99,9 @@ The use of **Vision Transformers**, particularly with **Cosine Annealing and War
 
 ## Authors
 
+- **Giresh Aditya R**
 - **Nandhini G** 
 - **Rajasree S**
-- **Giresh Aditya R**
 
  May 2025
 
