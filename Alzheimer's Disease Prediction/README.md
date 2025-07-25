@@ -1,10 +1,10 @@
-# 🧠 Vision Transformer for Early Prediction of Alzheimer’s Disease
+# Vision Transformer for Early Prediction of Alzheimer’s Disease
 
 This project implements a **Vision Transformer (ViT)** model for the early diagnosis of **Alzheimer’s disease** using **brain MRI scans**. It leverages the power of transformer-based deep learning to accurately classify disease stages and aims to improve medical decision-making by enabling earlier detection.
 
 ---
 
-## 📌 Objective
+## Objective
 
 The goal is to build a diagnostic AI framework for **early-stage Alzheimer’s detection** using axial MRI slices. Vision Transformers (ViTs) are used instead of traditional CNNs to better capture **global contextual features** in medical images.
 
@@ -18,14 +18,14 @@ Techniques such as **CLAHE enhancement**, **data augmentation**, and **learning 
 
 ---
 
-## 📁 Dataset Overview
+## Dataset Overview
 
 We use a **balanced and high-quality MRI dataset** that includes both real and synthetic scans, specifically curated for Alzheimer's classification.
 
-### 🔗 Dataset Source:
-- 📦 **Kaggle**: [Best Alzheimer MRI Dataset – 99% Accuracy](https://www.kaggle.com/datasets/lukechugh/best-alzheimer-mri-dataset-99-accuracy)
+### Dataset Source:
+- **Kaggle**: [Best Alzheimer MRI Dataset – 99% Accuracy](https://www.kaggle.com/datasets/lukechugh/best-alzheimer-mri-dataset-99-accuracy)
 
-### 🔍 Dataset Highlights:
+### Dataset Highlights:
 - Synthetic + Real MRI data generated via **Wasserstein GAN with Gradient Penalty (WGAN-GP)**
 - **Balanced across 4 classes** with 2,560 samples per class
 - **Metrics**:
@@ -36,7 +36,7 @@ We use a **balanced and high-quality MRI dataset** that includes both real and s
 
 These metrics confirm the synthetic MRIs closely resemble real scans, improving classification performance for minority classes by **91.4%**.
 
-### 🧾 Data Properties:
+### Data Properties:
 - Image Size: `224 × 224 × 3`
 - Classes: `4`
 - Patch Size: `16`
@@ -46,7 +46,7 @@ These metrics confirm the synthetic MRIs closely resemble real scans, improving 
 
 ---
 
-## 🔬 Vision Transformer Architecture
+## Vision Transformer Architecture
 
 The model follows the **ViT-B/16** architecture with no pretrained weights.
 
@@ -61,7 +61,7 @@ The model follows the **ViT-B/16** architecture with no pretrained weights.
 
 ---
 
-## 🏋️‍♂️ Training Details
+## Training Details
 
 | Parameter            | Value                       |
 |---------------------|-----------------------------|
@@ -73,7 +73,7 @@ The model follows the **ViT-B/16** architecture with no pretrained weights.
 | Loss Function       | CrossEntropyLoss            |
 | Scheduler Options   | StepLR / Cosine + Warmup    |
 
-### 🔄 Learning Rate Schedulers
+### Learning Rate Schedulers
 
 - **Cosine Annealing with Warmup**  
   Provides a smooth learning rate ramp-up followed by gradual decay. Helps stability during early training and improves generalization.
@@ -83,7 +83,7 @@ The model follows the **ViT-B/16** architecture with no pretrained weights.
 
 ---
 
-## 📈 Results
+## Results
 
 - Cosine + Warmup led to **smoother convergence** and better generalization than StepLR.
 - ViT successfully classified Alzheimer’s stages from MRI scans, even for **underrepresented classes**.
@@ -91,19 +91,19 @@ The model follows the **ViT-B/16** architecture with no pretrained weights.
 
 ---
 
-## 📌 Conclusion
+## Conclusion
 
 The use of **Vision Transformers**, particularly with **Cosine Annealing and Warmup**, enhances classification performance in the domain of medical imaging. This project provides a step forward in developing AI tools to assist in early Alzheimer's diagnosis, potentially leading to **timely intervention and improved patient outcomes**.
 
 ---
 
-## 🧑‍💻 Authors
+## Authors
 
 - **Nandhini G** 
 - **Rajasree S**
 - **Giresh Aditya R**
 
-📅 May 2025
+ May 2025
 
 ---
 
