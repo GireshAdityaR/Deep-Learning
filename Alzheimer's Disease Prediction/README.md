@@ -1,5 +1,9 @@
 # Vision Transformer for Early Prediction of Alzheimer’s Disease
 
+## Acknowledgement
+
+I would like to extend my sincere thanks to my Mentor Dr. Vidivelli S, and SASTRA Deemed University, for guiding me and providing me with resources upon successful completion of this project.
+
 This project implements a **Vision Transformer (ViT)** model for the early diagnosis of **Alzheimer’s disease** using **brain MRI scans**. It leverages the power of transformer-based deep learning to accurately classify disease stages and aims to improve medical decision-making by enabling earlier detection.
 
 ---
